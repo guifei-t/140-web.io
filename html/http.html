@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>A Short History of the Internet</title>
+	<link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+	<div id="header">
+		<h1>A Short History of the Internet</h1>
+		<h2>Project2</h2>
+	</div>
+
+	<div id="menu">
+		<ul>
+			<li><a href="index.html">Homepage</a></li>
+			<li><a href="pioneers.html">Internet Pioneers</a></li>
+			<li class="active"><a href="http.html">HTTP</a></li>
+			<li><a href="gopher.html">Gopher</a></li>
+			<li><a href="terminology.html">Terminology</a></li>
+			<li><a href="references.html">References</a></li>
+		</ul>
+	</div>
+	<div id="container">
+		<div id="primarycontainer">
+			<div id="primarycontent">
+
+				<div class="image-container full-width">
+					<img src="../media/How-does-HTTPS-work.jpg" alt="How HTTPS Works">
+				</div>
+
+				<div class="flex-container">
+					<div class="image-container vertical">
+						<img src="../media/HTTP-Status-Codes.jpg" alt="HTTP-Status-Codes">
+					</div>
+
+					<div class="content-box">
+						<p>When the client wants to access a simple HTML page, it sends an HTTP or HTTPS request to the
+							server.
+						</p>
+						<p>The request includes the URL of the page, telling the server the exact resource the client
+							wants to
+							access.</p>
+						<p>The server receives the request and searches for the file in its storage directory.</p>
+						<p>If the file is found, the server reads its content and sends it in HTML format back to the
+							client.
+						</p>
+						<p>HTTP follows a request-response model where the client requests and the server responds with
+							the
+							data.
+						</p>
+						<p>HTTPS, however, adds a layer of security using SSL/TLS protocols to encrypt data transmission
+							between
+							the
+							client and server.</p>
+						<p>The HTTPS process can be broken down into four stages: TCP handshake, certificate validation,
+							key
+							exchange, and data transmission.</p>
+						<p>First, a TCP connection is established between the client and server during the handshake to
+							ensure a
+							stable communication channel.</p>
+						<p>Next, the server sends a digital certificate, and the client verifies its authenticity.</p>
+						<p>If the certificate is valid, the client generates a session key and sends it to the server
+							encrypted
+							using asymmetric encryption.</p>
+						<p>Once the key exchange is complete, both the client and server use symmetric encryption with
+							the
+							session
+							key to encrypt the data during transmission.</p>
+						<p>This ensures that even if the data is intercepted, the attacker cannot decrypt it without the
+							session
+							key.</p>
+						<p>The server sends the encrypted content, and the client decrypts it to display the requested
+							HTML
+							page.
+						</p>
+						<p>By using HTTPS, the risk of man-in-the-middle attacks and data tampering is significantly
+							reduced,
+							ensuring a secure communication environment.</p>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<p>Email:gt7514@rit.edu</p>
+		<p>&copy; 2024 Guifei Teng</p>
+	</footer>
+</body>
+
+</html>
